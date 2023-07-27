@@ -1,0 +1,8 @@
+[env.preview]
+name = "poke-party-preview"
+workers_dev = true
+
+[env.production]
+name = "poke-party"
+route = "poke-party.pages.dev/*"
+workers_dev = false

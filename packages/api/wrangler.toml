@@ -1,0 +1,23 @@
+name = "poke-party-api"
+compatibility_date = "2023-01-01"
+send_metrics = false
+account_id = "d639073ddb94a41ab94f5158c21f11e0"
+
+[[ d1_databases ]]
+binding = "DB"
+database_name = "poke-party-d1"
+database_id = "d073c355-d316-44dd-ae4a-f72d992c8def"
+migrations_dir = "migrations"
+
+# The necessary secrets are:
+# - APP_URL - for preventing CORS errors
+# - JWT_VERIFICATION_KEY - for Supabase @link https://supabase.com
+#
+# For local development, you can create a file called .dev.vars and use dotenv syntax.
+#
+# For deployed environments, you can use wrangler secrets to set these values.
+# For example:
+# Run `echo <VALUE> | wrangler secret put <NAME>` for each of these
+# Or use the Cloudflare web interface.
+# @link https://developers.cloudflare.com/workers/platform/environment-variables/#environment-variables-via-the-dashboard
+#
