@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "wrangler dev src/index.ts",
     "generate": "drizzle-kit generate:sqlite --schema=./src/db/schema.ts --out=./migrations",
-    "migrate": "wrangler d1 migrations apply poke-party-d1",
-    "migrate:local": "wrangler d1 migrations apply poke-party-d1 --local",
-    "seed": "NO_D1_WARNING=true wrangler d1 execute poke-party-d1 --local --file=./seed/seed.sql",
+    "migrate": "wrangler d1 migrations apply poke-party",
+    "migrate:local": "wrangler d1 migrations apply poke-party --local",
+    "seed": "NO_D1_WARNING=true wrangler d1 execute poke-party --local --file=./seed/seed.sql",
     "deploy": "NO_D1_WARNING=true wrangler deploy --minify src/index.ts",
     "postinstall": "pnpm generate",
     "with-env": "dotenv -e ../../.env.local --",

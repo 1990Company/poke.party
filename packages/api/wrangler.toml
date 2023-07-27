@@ -5,8 +5,8 @@ account_id = "d639073ddb94a41ab94f5158c21f11e0"
 
 [[ d1_databases ]]
 binding = "DB"
-database_name = "poke-party-d1"
-database_id = "d073c355-d316-44dd-ae4a-f72d992c8def"
+database_name = "poke-party"
+database_id = "9e496f79-5a12-400e-b690-204b1e63f532"
 migrations_dir = "migrations"
 
 # The necessary secrets are:
