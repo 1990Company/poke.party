@@ -4,5 +4,5 @@ workers_dev = true
 
 [env.production]
 name = "poke-party"
-route = "poke-party-api.1990c.workers.dev/*"
+route = "poke-party.pages.dev/*"
 workers_dev = false
