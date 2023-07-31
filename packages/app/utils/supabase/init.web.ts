@@ -5,6 +5,6 @@ const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLIC_KEY as string
 
 export const supabase = createClient(supabaseUrl, supabaseKey, {
   auth: {
-    persistSession: false,
+    persistSession: true,
   },
 })
